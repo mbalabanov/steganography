@@ -1,6 +1,6 @@
 # Steganography in Python
 
-## TLDR
+## TL;DR (Running This Code)
 To decode a hidden message in an image, you can use Python with the Pillow library. The hidden message is encoded in the least significant bit of each color channel (red, green, and blue) of the image. The Python code for encoding and decoding the message can be found in a [Medium post](https://dayanand-shah.medium.com/the-art-of-hiding-secret-messages-in-images-with-python-steganography-5a6583065856).
 
 ### Running the Code
