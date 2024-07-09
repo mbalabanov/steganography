@@ -56,7 +56,7 @@ Based on the contents of the image, I thought that this is another red herring. 
 
 My coworker replied with a cryptic statement: ```Did you know? Within digital imagery, hidden whispers await. Pay close attention—they may reveal the concealed truth.```
 
-Maybe living in Greece has already made an impression on me, but that statement sounds a bit like the proclamation of the _Oracle of Delphi_ from ancient Greek times. It confirmed that I was on the right track.
+Maybe living in Greece has already made an impression on me, but that statement sounds a bit like the proclamation of the [Oracle of Delphi](https://en.wikipedia.org/wiki/Pythia) from ancient Greek times. It confirmed that I was on the right track.
 
 I decided to look at the upload date on Imgur to see how old the image is, and it looked quite fresh at only a few days prior to the current date. Taking into account the time that I left the email unanswered and the time it might have taken my coworker to write the email, it was very likely that he had uploaded the image himself. Therefore, the hidden message __must__ be in the image!
 
@@ -64,9 +64,11 @@ I decided to look at the upload date on Imgur to see how old the image is, and i
 
 Even though I have no idea how to encode a message into an image, I thought it might be a good idea to download the actual file to analyze it in detail.
 
-There are two ways of downloading images from Imgur. I first dragged the image from the browser to the local file system. This gave me a .webp file. Call me old-fashioned, but I kinda dislike .webp files. So I clicked on the little download icon Imgur provides at the top of images. This gave me a .png file. I compared the file sizes. The .webp file I had dragged directly from the browser had a considerably smaller file size than the .png file. While I can't say for certain, I assume that Imgur automatically converts files to .webp to reduce their file size and conserve bandwidth. This allowed me to conclude that the original format of the uploaded file is .png. If the image has a hidden message, then I'd better look for it in the larger file.
+There are two ways of downloading images from Imgur. I first dragged the image from Safari to the local file system. This gave me a .webp file. Call me old-fashioned, but I kinda dislike .webp files. Please note that this happens when you use Safari. Google Chrome gives you a .png file if you drag it from the browser. So instead, I clicked on the little download icon Imgur provides at the top of images. This gave me a .png file. I compared the file sizes. The .webp file I had dragged directly from Safari had a considerably smaller file size than the .png file. While I can't say for certain, I assume that Imgur automatically converts files to .webp to reduce their file size and conserve bandwidth. This allowed me to conclude that the original format of the uploaded file is .png. If the image has a hidden message, then I'd better look for it in the larger file.
 
 I opened the file with [Graphic Converter](https://www.lemkesoft.de/en/products/graphicconverter), a macOS app that acts as a true Swiss army knife for extracting as much metadata as possible from image files in any format (including some obscure medical image formats and most historic image formats all the way back to 8-bit machines from the early 1980s).
+
+![The image file opened in Graphic Converter](img/graphic-converter-imgur.png "The image file opened in Graphic Converter shows no EXIF and other metadata")
 
 No luck there... none of the EXIF data or other metadata looked useful. I couldn't find a hidden message using Graphic Converter.
 
