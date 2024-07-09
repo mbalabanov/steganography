@@ -1,7 +1,9 @@
 # Steganography in Python
 ## How I Felt Compelled to Find a Hidden Message in an Image Without Realizing How Interesting It Would End Up Being
 
-One day, I received an email from a coworker with a kind invitation to a feedback call. At the very end of his message, he stated that there was a secret message hidden in the email.
+One day, I received an email from a coworker with a kind invitation to a feedback call. It was a friendly and welcoming request that we review our collaborations so far and see if there are any areas we can improve. I am sure you know this kind of message.
+
+But this email was different! At the very end of his message, he stated that there was a secret message hidden in the email.
 
 This tickled my curiosity. I decided to find the message... come what may! This is my quite short yet surprisingly eventful journey.
 
