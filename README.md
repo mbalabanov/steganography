@@ -1,5 +1,5 @@
 # Steganography in Python
-## How I Felt Compelled to Find a Hidden Message in an Image Without Realizing How Interesting It Would End Up Being
+## How I Felt Compelled to Find a Hidden Message Without Realizing How Interesting It Would End Up Being
 
 One day, I received an email from a coworker with a kind invitation to a feedback call. It was a friendly and welcoming request that we review our collaborations so far and see if there are any areas we can improve. I am sure you know this kind of message.
 
@@ -10,11 +10,11 @@ This tickled my curiosity. I decided to find the message... come what may! This 
 ## Finding the Hidden Message
 At the end of the email, I found a few blank spaces tagged as a hyperlink with a fake email address "try again" and the subject line "Too easy, try again." This was a red herring.
 
-I pulled the __email__ out of the corporately mandated Outlook application (_I know..._) onto the macOS desktop and opened the resulting file in a text editor. It turns out that Outlook hashes the contents of an email. After running the hashes through [10015.io](https://10015.io/tools/base64-encoder-decoder), I made the mildly interesting but not very useful discovery that Outlook provides the email's content in two different formats: as plain text and as HTML.
+I pulled the __email__ out of the corporately mandated Outlook application (_I know..._) onto the macOS desktop and opened the resulting file in a text editor. It turns out that Outlook hashes the contents of an email. After running the hashes through [10015.io](https://10015.io/tools/base64-encoder-decoder) (though you can use any other tool that encodes and decodes), I made the mildly interesting but not very useful discovery that Outlook provides the email's content twice, each in a different format: as plain text and as HTML.
 
-Now, I won't mince words here. Outlook's HTML is distressingly ugly. It has inline styling and looked sickeningly convoluted. I seem to remember that the only way to get reliable layouts in the HTML of an Outlook email used to be to use tables for layout purposes. I don't know if this is still true nowadays, but I wouldn't be surprised if it were.
+Now, I won't mince words here. Outlook's HTML is distressingly ugly. It has inline styling and looks sickeningly convoluted. I seem to remember that the only way to get reliable layouts in the HTML of an Outlook email used to be to use tables for layout purposes. I don't know if this is still true nowadays, but I wouldn't be surprised if it were.
 
-Alas, I could not find any indication of a hidden message there. Though, I did learn that machine-generated HTML is still far worse than carefully hand-crafted HTML.
+Alas, I could not find any indication of a hidden message there. Though, I can't hide my satisfaction upon learning that machine-generated HTML is still far worse than carefully hand-crafted HTML.
 
 I then looked at the __recipients__ of the email. They included other coworkers but also another obviously fake email address.
 ```RGlkIHlvdSByZWFsbHkgdGhpbmsgdGhhdCB0aGlzIHdhcyBnb2luZyB0byBiZSBlYXN5PyAiYUhSMGNITTZMeTlwYldkMWNpNWpiMjB2WVM5YVJYbERaek5XIg==@notreallydomain.com.```
