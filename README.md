@@ -23,6 +23,8 @@ The decoded message reads:
 
 Turns out the string aHR0cHM6Ly9pWnd1ci5j2vYS9aRXlDazNW is also Base64 encoded. After decoding it, you get an actual link [https://imgur.com/a/ZEyCg3V](https://imgur.com/a/ZEyCg3V)
 
+![The image that the double Base64 encoded string revealed](imgur.png "The image on Imgur")
+
 Based on the contents of the image, I thought that this is another red herring. Nevertheless I sent it to my coworker. Even though I did not believe that this is the hidden message I was looking for, it was at least _some kind_ of hidden message.
 
 My coworker replied with a cryptic statement: ```Did you know? Within digital imagery, hidden whispers await. Pay close attention—they may reveal the concealed truth.```
