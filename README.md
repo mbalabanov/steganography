@@ -1,4 +1,4 @@
-# Steganography
+# A Short Adventure in Steganography
 
 One day, I received an email from a coworker with a kind invitation to a feedback call. At the very end of his message he stated that there is a secret message hidden in the email.
 
