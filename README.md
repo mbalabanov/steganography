@@ -20,7 +20,7 @@ But this email was different! At the very end of his message, he stated that the
 This tickled my curiosity. I decided to find the message... come what may! This is my quite short yet surprisingly eventful journey.
 
 ## Finding the Hidden Message
-At the end of the email, I found a few blank spaces tagged as a hyperlink with a fake email address "try again" and the subject line "Too easy, try again." This was a red herring.
+At the end of the email, I found a few blank spaces tagged as a hyperlink with a fake email address "try again" and the subject line "Too easy, try again." This was a red herring to mislead us from the real hidden message.
 
 ![The red herring](img/red-herring-hyperlink.png "A hyperlink to nowhere, a true red herring to distract me from the real hidden message")
 
