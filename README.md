@@ -26,7 +26,7 @@ The string before the @ sign looked like a hash of some sort. I assumed that the
 The decoded message reads:
 ```Did you really think that this was going to be easy? "aHR0cHM6Ly9pWnd1ci5j2vYS9aRXlDazNW"```
 
-It turns out the string aHR0cHM6Ly9pWnd1ci5j2vYS9aRXlDazNW is also Base64 encoded. After decoding it, you get an actual link: [https://imgur.com/a/ZEyCg3V](https://imgur.com/a/ZEyCg3V).
+It turns out the string `aHR0cHM6Ly9pWnd1ci5j2vYS9aRXlDazNW` is also Base64 encoded. After decoding it, you get an actual link: [https://imgur.com/a/ZEyCg3V](https://imgur.com/a/ZEyCg3V).
 
 ![The image that the double Base64 encoded string revealed](imgur.png "The image on Imgur")
 
@@ -61,6 +61,6 @@ I'm not going to pretend that I know anything about steganography in Python. Acc
 I installed Pillow and ran the Python code on the image file. And I was astounded... I actually got a clear text message printed to the console:
 ```Congratulations! You're as awesome as me :-)```
 
-Now, I don't think that I am awesome... but my coworker sure is! I sent him the message that I had found, and he confirmed that it was correct.
+I don't really think that I am awesome... but my coworker sure is! I sent him the message that I had found, and he confirmed that it was correct.
 
 I was so happy that I nearly forgot to accept his invitation to the feedback call he originally asked for in his email.
