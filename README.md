@@ -1,4 +1,4 @@
-# A Short Adventure in Steganography
+# Steganography in Python: How I Found a Hidden Message in an Image Without Realizing How Interesting It Would End up Being
 
 One day, I received an email from a coworker with a kind invitation to a feedback call. At the very end of his message he stated that there is a secret message hidden in the email.
 
