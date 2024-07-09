@@ -8,18 +8,20 @@ This tickled my curiosity. I decided to find the message... come what may! This 
 ## Finding the Hidden Message
 At the end of the email, I found a few blank spaces tagged as a hyperlink with a fake email address "try_again" and the subject line "Too easy, try again". This was a red herring.
 
-I pulled the __email__ out of the corporately mandated Outlook application (_I know..._) onto the MacOS desktop and opened the resulting file in a text editor. Turns out that Outlook hashes the contents of an email and provides it in two different formats: as plain text and as HTML. 
+I pulled the __email__ out of the corporately mandated Outlook application (_I know..._) onto the MacOS desktop and opened the resulting file in a text editor. Turns out that Outlook hashes the contents of an email. After running the hashes through [10015.io](https://10015.io/tools/base64-encoder-decoder) I made the mildly interesting but not very useful discovery that Outlook provides the email's content in two different formats: as plain text and as HTML. 
 
-Now the HTML was distressingly ugly. It had inline styling and looked sickeningly convoluted. I could not find any indication of a hidden message there. Though, I did learn that machine-generated HTML is still far worse than carefully hand-crafted HTML.
+Now I won't mince words here. Outlook's HTML is distressingly ugly. It has inline styling and looked sickeningly convoluted. I seem to remember that the only way to get reliable layouts in the HTML of an Outlook email used to be to use tables for layout purposes. I don't know if this is still true nowadays but I wouldn't be surprised if it were.
+
+Alas, I could not find any indication of a hidden message there. Though, I did learn that machine-generated HTML is still far worse than carefully hand-crafted HTML.
 
 I then looked at the __recipients__ of the email. They included other coworkers but also another obviously fake email address.
 ```RGlkIHlvdSByZWFsbHkgdGhpbmsgdGhhdCB0aGlzIHdhcyBnb2luZyB0byBiZSBlYXN5PyAiYUhSMGNITTZMeTlwYldkMWNpNWpiMjB2WVM5YVJYbERaek5XIg==@notreallydomain.com".```
 
-This must be the hidden message.
+This must be the hidden message!
 
 ## Decoding the Hidden Message
 
-The string before the @ sign looked like a hash of some sort. I assumed that the end of the fake email address `@notreallydomain.com` should not be included in any attempts to decode it. The trailing `==` looked familiar and I assumed that they terminate some kind of encoding. I went to [10015.io](https://10015.io/tools/base64-encoder-decoder) and ran the string through some of the decoders. It turned out that it is __Base64__ encoded.
+The string before the @ sign looked like a hash of some sort. I assumed that the end of the fake email address `@notreallydomain.com` should not be included in any attempts to decode it. The trailing `==` looked familiar and I felt that they terminate some kind of encoding. Again I went to [10015.io](https://10015.io/tools/base64-encoder-decoder) and ran the string through some of the decoders. It turned out that it is __Base64__ encoded.
 
 The decoded message reads:
 ```Did you really think that this was going to be easy? "aHR0cHM6Ly9pWnd1ci5j2vYS9aRXlDazNW"```
