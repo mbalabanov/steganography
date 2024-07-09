@@ -47,7 +47,7 @@ Like any person lost for the right answer, I simply googled for "hiding messages
 
 Among the results of the web search I bumped into a post on Medium about decoding a hidden message from a PNG using __Python__. I knew that while my coworker is impressively adept in many programming languages, I think that he prefers Python. At least that is my impression because when we review JavaScript code together, he uses sophisticated but alien terms like _dictionary_ and _tuple_ that do not apply to rickety, old JavaScript.
 
-Anyway, it was worth a try. It might well be the solution to finding the hidden message. You can find the Medium post with the solution by Dayanand Shah here: [on Medium](https://dayanand-shah.medium.com/the-art-of-hiding-secret-messages-in-images-with-python-steganography-5a6583065856)
+Anyway, it was worth a try. It might well be the solution to finding the hidden message. You can find the Medium post with the solution by Dayanand Shah [here on Medium](https://dayanand-shah.medium.com/the-art-of-hiding-secret-messages-in-images-with-python-steganography-5a6583065856)
 
 I'm not going pretend that I know anything about steganography in Python. According to the Medium post, you can encode a binary message in a .png file in the least significant bit of each color channel (red, green, and blue). Fortunately, the post not only provided the Python code for encoding a message in an image but also how to __decode__ it.
 
