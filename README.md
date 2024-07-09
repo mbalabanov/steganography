@@ -1,23 +1,41 @@
 # Steganography in Python
+
+## TLDR
+To decode a hidden message in an image, you can use Python with the Pillow library. The hidden message is encoded in the least significant bit of each color channel (red, green, and blue) of the image. The Python code for encoding and decoding the message can be found in a [Medium post](https://dayanand-shah.medium.com/the-art-of-hiding-secret-messages-in-images-with-python-steganography-5a6583065856).
+
+### Running the Code
+1. Install the Pillow library with `pip install Pillow`.
+2. Run the Python code with `python steganography.py`. By default, it reads the file `imgur.png` and decodes the hidden message outputting it to the console.
+
 ## How I Felt Compelled to Find a Hidden Message Without Realizing How Interesting It Would End Up Being
 
 One day, I received an email from a coworker with a kind invitation to a feedback call. It was a friendly and welcoming request that we review our collaborations so far and see if there are any areas we can improve. I am sure you know this kind of message.
 
 But this email was different! At the very end of his message, he stated that there was a secret message hidden in the email.
 
+![My cowroker invited me to a call and made the email intriguing](img/email-snippet.png "My coworker's email with a hidden message")
+
 This tickled my curiosity. I decided to find the message... come what may! This is my quite short yet surprisingly eventful journey.
 
 ## Finding the Hidden Message
 At the end of the email, I found a few blank spaces tagged as a hyperlink with a fake email address "try again" and the subject line "Too easy, try again." This was a red herring.
 
+![The red herring](img/red-herring-hyperlink.png "A hyperlink to nowhere, a true red herring to distract me from the real hidden message")
+
 I pulled the __email__ out of the corporately mandated Outlook application (_I know..._) onto the macOS desktop and opened the resulting file in a text editor. It turns out that Outlook hashes the contents of an email. After running the hashes through [10015.io](https://10015.io/tools/base64-encoder-decoder) (though you can use any other tool that encodes and decodes), I made the mildly interesting but not very useful discovery that Outlook provides the email's content twice, each in a different format: as plain text and as HTML.
 
+![Outlook encodes the email contents in Base64](img/outlook-base64-encoded.png "Decoding the Base64 contents of the Outlook email file yields the email's content in plain text and HTML formats")
+
 Now, I won't mince words here. Outlook's HTML is distressingly ugly. It has inline styling and looks sickeningly convoluted. I seem to remember that the only way to get reliable layouts in the HTML of an Outlook email used to be to use tables for layout purposes. I don't know if this is still true nowadays, but I wouldn't be surprised if it were.
+
+![Very ugly and convoluted HTML code](img/outlook-html-email.png "The HTML code in the Outlook email looks like it fell out of the ugly tree and hit every branch on the way down")
 
 Alas, I could not find any indication of a hidden message there. Though, I can't hide my satisfaction upon learning that machine-generated HTML is still far worse than carefully hand-crafted HTML.
 
 I then looked at the __recipients__ of the email. They included other coworkers but also another obviously fake email address.
 ```RGlkIHlvdSByZWFsbHkgdGhpbmsgdGhhdCB0aGlzIHdhcyBnb2luZyB0byBiZSBlYXN5PyAiYUhSMGNITTZMeTlwYldkMWNpNWpiMjB2WVM5YVJYbERaek5XIg==@notreallydomain.com.```
+
+![This fake email address might well contain the hidden message](img/fake-email-address.png "I found this fake email address in the list of recipients of the email. It looks like it might contain the hidden message.")
 
 This must be the hidden message!
 
@@ -66,3 +84,7 @@ I installed Pillow and ran the Python code on the image file. And I was astounde
 I don't really think that I am awesome... but my coworker sure is! I sent him the message that I had found, and he confirmed that it was correct.
 
 I was so happy that I nearly forgot to accept his invitation to the feedback call he originally asked for in his email.
+
+***
+
+I was very much tempted to encode secret messages into every image in this article. But I refrained from that, so you can enjoy the images without any distractions.
