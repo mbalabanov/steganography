@@ -7,7 +7,9 @@ This tickled my curiosity. I decided to find the message... come what may! This 
 ## Finding the Hidden Message
 At the end of the email, I found a few blank spaces tagged as a hyperlink with a fake email address "try_again" and the subject line "Too easy, try again". This was a red herring.
 
-I pulled the __email__ out of Outlook (I know...) onto the desktop and opened the resulting file in a text editor. Turns out that Outlook hashes the contents of an email and provides it in two different formats: as plain text and as HTML. Now the HTML was distressingly ugly. It had inline styling and looked sickeningly convoluted. I could not find any indication of a hidden message there. Though, I did learn something: machine-generated HTML is still far worse than hand-crafted HTML.
+I pulled the __email__ out of Outlook (I know...) onto the desktop and opened the resulting file in a text editor. Turns out that Outlook hashes the contents of an email and provides it in two different formats: as plain text and as HTML. 
+
+Now the HTML was distressingly ugly. It had inline styling and looked sickeningly convoluted. I could not find any indication of a hidden message there. Though, I did learn that machine-generated HTML is still far worse than carefully hand-crafted HTML.
 
 I then looked at the __recipients__ of the email. They included other coworkers but also another obviously fake email address.
 ```RGlkIHlvdSByZWFsbHkgdGhpbmsgdGhhdCB0aGlzIHdhcyBnb2luZyB0byBiZSBlYXN5PyAiYUhSMGNITTZMeTlwYldkMWNpNWpiMjB2WVM5YVJYbERaek5XIg==@notreallydomain.com".```
