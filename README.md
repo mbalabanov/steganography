@@ -89,4 +89,4 @@ I was so happy that I nearly forgot to accept his invitation to the feedback cal
 
 ***
 
-I was very much tempted to encode secret messages into every image in this article. But I refrained from that, so you can enjoy the images without any distractions.
+_I was very much tempted to encode secret messages into every image in this article. But I refrained from that, so you can enjoy the images without any distractions._
