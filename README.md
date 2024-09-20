@@ -5,7 +5,7 @@ To decode a hidden message in an image, you can use Python with the Pillow libra
 
 ### Running the Code
 1. Install the Pillow library with `pip install Pillow`.
-2. Run the Python code with `python steganography.py`. By default, it reads the file `imgur.png` and decodes the hidden message outputting it to the console.
+2. Run the Python code with `python decode.py`. By default, it reads the file `imgur.png` and decodes the hidden message outputting it to the console.
    
 ## Read All Details
 You can find a much more detailed write-up about this topic here on my website [marincomics.com](https://marincomics.com/python-steganography.html)
